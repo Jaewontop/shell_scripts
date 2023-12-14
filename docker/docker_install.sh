@@ -18,6 +18,7 @@ sudo usermod -aG docker $USER
 
 # install docker-compose
 sudo apt-get install docker-compose-plugin
+sudo apt-get install docker-compose
 sudo service docker restart
 
 echo "DOCKER VERSION : $(docker --version)"
