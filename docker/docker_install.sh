@@ -15,8 +15,12 @@ apt-cache policy docker-ce
 sudo apt install -y docker-ce
 sudo usermod -aG docker $USER
 
+
 # install docker-compose
 sudo apt-get install docker-compose-plugin
+sudo service docker restart
 
 echo "DOCKER VERSION : $(docker --version)"
 echo "DOCKER COMPOSE VERSION : $(docker compose version)"
+
+
